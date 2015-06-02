@@ -1,0 +1,104 @@
+{
+  "title": "Looking up the definition of \u0027apple\u0027",
+  "name": "Looking up the definition of \u0027apple\u0027",
+  "result": "SUCCESS",
+  "steps": "4",
+  "successful": "4",
+  "failures": "0",
+  "skipped": "0",
+  "ignored": "0",
+  "pending": "0",
+  "duration": "5656",
+  "timestamp": "2015-06-02T15:13:32.748+03:00",
+  "user-story": {
+    "qualifiedStoryClassName": "LookupADefinition",
+    "storyName": "Lookup a definition",
+    "path": "foo/stories/consult_dictionary/LookupADefinition.story"
+  },
+  "issues": [],
+  "versions": [],
+  "tags": [
+    {
+      "name": "Lookup a definition",
+      "type": "story"
+    }
+  ],
+  "test-steps": [
+    {
+      "number": 1,
+      "description": "Given the user is on the Wikionary home page",
+      "duration": 3590,
+      "startTime": 1433247212779,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 2,
+          "description": "Is the home page",
+          "duration": 3478,
+          "startTime": 1433247212889,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "description": "When the user looks up the definition of the word \u0027apple\u0027",
+      "duration": 1586,
+      "startTime": 1433247216369,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 4,
+          "description": "Looks for: {apple}",
+          "duration": 1577,
+          "startTime": 1433247216377,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": [
+            {
+              "number": 5,
+              "description": "Enters: {apple}",
+              "duration": 224,
+              "startTime": 1433247216378,
+              "screenshots": [],
+              "result": "SUCCESS",
+              "children": []
+            },
+            {
+              "number": 6,
+              "description": "Starts search",
+              "duration": 1352,
+              "startTime": 1433247216602,
+              "screenshots": [],
+              "result": "SUCCESS",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "description": "Then they should see the definition \u0027A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.\u0027",
+      "duration": 449,
+      "startTime": 1433247217955,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 8,
+          "description": "Should see definition: {A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}",
+          "duration": 446,
+          "startTime": 1433247217958,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

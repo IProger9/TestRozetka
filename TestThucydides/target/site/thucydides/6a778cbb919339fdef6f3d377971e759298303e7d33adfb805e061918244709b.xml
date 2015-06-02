@@ -1,0 +1,26 @@
+<acceptance-test-run title="Looking up the definition of &apos;apple&apos;" name="Looking up the definition of &apos;apple&apos;" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="5656" timestamp="2015-06-02T15:13:32.748+03:00">
+  <user-story id="LookupADefinition" name="Lookup a definition" path="foo/stories/consult_dictionary/LookupADefinition.story"/>
+  <tags>
+    <tag name="Lookup a definition" type="story"/>
+  </tags>
+  <test-group name="Given the user is on the Wikionary home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3478">
+      <description>Is the home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user looks up the definition of the word &apos;apple&apos;" result="SUCCESS">
+    <test-group name="Looks for: {apple}" result="SUCCESS">
+      <test-step result="SUCCESS" duration="224">
+        <description>Enters: {apple}</description>
+      </test-step>
+      <test-step result="SUCCESS" duration="1352">
+        <description>Starts search</description>
+      </test-step>
+    </test-group>
+  </test-group>
+  <test-group name="Then they should see the definition &apos;A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.&apos;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="446">
+      <description>Should see definition: {A common, round fruit produced by the tree Malus domestica, cultivated in temperate climates.}</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

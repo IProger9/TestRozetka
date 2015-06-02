@@ -1,0 +1,94 @@
+{
+  "title": "View result of searching",
+  "name": "View result of searching",
+  "result": "SUCCESS",
+  "steps": "4",
+  "successful": "4",
+  "failures": "0",
+  "skipped": "0",
+  "ignored": "0",
+  "pending": "0",
+  "duration": "5564",
+  "timestamp": "2015-06-02T16:06:37.785+03:00",
+  "user-story": {
+    "qualifiedStoryClassName": "LookupADefinition",
+    "storyName": "Lookup a definition",
+    "path": "foo/stories/consult_dictionary/LookupADefinition.story"
+  },
+  "issues": [],
+  "versions": [],
+  "tags": [
+    {
+      "name": "Lookup a definition",
+      "type": "story"
+    }
+  ],
+  "test-steps": [
+    {
+      "number": 1,
+      "description": "Given the user is on the Rozetka home page",
+      "duration": 3624,
+      "startTime": 1433250397832,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 2,
+          "description": "Open search page",
+          "duration": 3529,
+          "startTime": 1433250397926,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "description": "When the user type word \u0027notebook\u0027 in search field",
+      "duration": 695,
+      "startTime": 1433250401457,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 4,
+          "description": "Type search field: {notebook}",
+          "duration": 557,
+          "startTime": 1433250401459,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        },
+        {
+          "number": 5,
+          "description": "Click search button",
+          "duration": 135,
+          "startTime": 1433250402017,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "description": "Then they should see appropriate result of searching",
+      "duration": 1195,
+      "startTime": 1433250402153,
+      "screenshots": [],
+      "result": "SUCCESS",
+      "children": [
+        {
+          "number": 7,
+          "description": "Search result title text contains: {notebook}",
+          "duration": 1193,
+          "startTime": 1433250402155,
+          "screenshots": [],
+          "result": "SUCCESS",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
