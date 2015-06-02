@@ -120,9 +120,6 @@
         <profile>
             <id>maven3</id>
             <activation>
-            <default>
-            true
-            </default>
                 <file>
                     <exists>${basedir}</exists>
                 </file>
