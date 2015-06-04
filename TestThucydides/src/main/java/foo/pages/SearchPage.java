@@ -1,23 +1,16 @@
 package foo.pages;
 
-import ch.lambdaj.function.convert.Converter;
+
 import net.thucydides.core.annotations.DefaultUrl;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import net.thucydides.core.pages.WebElementFacade;
 
 import net.thucydides.core.annotations.findby.FindBy;
 
-import net.thucydides.core.pages.PageObject;
+import foo.pages.GeneralPage;
 
-import java.util.List;
-
-import static ch.lambdaj.Lambda.convert;
 
 @DefaultUrl("http://rozetka.com.ua/")
-public class SearchPage extends PageObject {
+public class SearchPage extends GeneralPage {
 
     @FindBy(className="header-search-input-text")
     private WebElementFacade searchField;
@@ -27,6 +20,9 @@ public class SearchPage extends PageObject {
     
     @FindBy(className="search-result-title-text")
     private WebElementFacade searchResultTitleText;
+    
+    @FindBy(name="search-category-value")
+    private WebElementFacade searchCategoryValue;
 
     public void typeSearchField(String keyword) {
     	searchField.type(keyword);
