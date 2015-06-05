@@ -20,12 +20,6 @@ public class SearchPage extends GeneralPage {
     
     @FindBy(className="search-result-title-text")
     private WebElementFacade searchResultTitleText;
-    
-    @FindBy(name="search-category-value")
-    private WebElementFacade searchCategoryValue;
-    
-    @FindBy(name="header_user_menu_parent")
-    private WebElementFacade headerUserMenuParent;
 
     public void typeSearchField(String keyword) {
     	searchField.type(keyword);
